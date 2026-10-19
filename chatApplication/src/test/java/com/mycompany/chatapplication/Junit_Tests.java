@@ -54,8 +54,8 @@ public class Junit_Tests
     @Test
     public void testLoginUser_failure() 
     {
-        ChatApplication.accountUser = "user_";
-        ChatApplication.accountPass = "Pass123@";
+        ChatApplication.userName = "user_";
+        ChatApplication.password = "Pass123@";
 
         assertFalse(ChatApplication.loginUser("wrong_", "Pass123@"));
     }
