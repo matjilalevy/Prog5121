@@ -114,7 +114,7 @@ public class Message {
    // Mathod that stores all the messages in the json file
     public void storeMessage() {
         try {
-            java.io.FileWriter writer = new java.io.FileWriter("messages.json", true);
+            java.io.FileWriter writer = new java.io.FileWriter("messages.txt", true);
             writer.write("{\n");
             writer.write("  \"Message ID\": \"" + messageID + "\",\n");
             writer.write("  \"Message Hash\": \"" + signHash + "\",\n");
