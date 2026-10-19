@@ -86,9 +86,9 @@ public class Message {
             storeMessage();
             return "Message stored successfully!";
         } else if (choice == 2) {
-            return "Message disregarded and deleted!";
+            return "Message deleted!";
         } else {
-            return "Not in the list, please choose between (1 , 2, and 0)";
+            return "Please choose between (1 , 2, and 0)";
         }
     }
     
