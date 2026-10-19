@@ -37,20 +37,21 @@ public class MessageTest
         assertTrue(total >= 0);
     }
     
-    // Tests if messages can be printed
+    // Tests if messages can be printed when empty
     @Test
     public void testPrintMessages() 
     {
         String result = Message.printMessages();
-        assertNull(result);
+        assertEquals("No messages sent yet.", result);
     }
     
-    // Tests if message details are returned
+    // Tests if message details are returned correctly
     @Test
     public void testGetMessageDetails() 
     {
         Message msg = new Message(1, "+27731234567", "Hi Sir");
         String details = msg.getMessageDetails();
-        assertNull(details);
+        assertNotNull(details);
+        assertTrue(details.contains("Hi Sir"));
     }
 }
