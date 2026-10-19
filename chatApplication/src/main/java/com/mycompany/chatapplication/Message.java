@@ -106,12 +106,12 @@ public class Message {
         return allMessages;
     }
     
-    // Method that counts all number of messages
+    // Method that counts all number of messages.
     public static int returnTotalMessages() {
         return sentMessage;
     }
     
-   // Mathod that stores all the messages in the json file
+   // Mathod that stores all the messages in the json file.
     public void storeMessage() {
         try {
             java.io.FileWriter writer = new java.io.FileWriter("messages.json", true);
@@ -127,7 +127,7 @@ public class Message {
         }
     }
     
-    // helps the method messageID(), reciever cellphone number, and the hash sign
+    // helps the method messageID(), reciever cellphone number, and the hash sign.
     public String getMessageDetails() {
         return "Message ID: " + messageID + "\n" +
                "Message Hash: " + signHash + "\n" +
@@ -147,7 +147,7 @@ public class Message {
             return false;
         }
     }
-      // Getteer method to help counting the total message of message calling
+      // Getteer method to help counting the total message of message calling.
     public int getMessageCount() 
     {
         return messageCounter;
