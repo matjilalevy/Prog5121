@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package login;
+package com.mycompany.chatapplication;
 
 import java.util.Random;
 
@@ -86,9 +86,9 @@ public class Message {
             storeMessage();
             return "Message stored successfully!";
         } else if (choice == 2) {
-            return "Message deleted!";
+            return "Message disregarded and deleted!";
         } else {
-            return "Please choose between (1 , 2, and 0)";
+            return "Not in the list, please choose between (1 , 2, and 0)";
         }
     }
     
@@ -106,12 +106,12 @@ public class Message {
         return allMessages;
     }
     
-    // Method that counts all number of messages.
+    // Method that counts all number of messages
     public static int returnTotalMessages() {
         return sentMessage;
     }
     
-   // Mathod that stores all the messages in the json file.
+   // Mathod that stores all the messages in the json file
     public void storeMessage() {
         try {
             java.io.FileWriter writer = new java.io.FileWriter("messages.json", true);
@@ -127,7 +127,7 @@ public class Message {
         }
     }
     
-    // helps the method messageID(), reciever cellphone number, and the hash sign.
+    // helps the method messageID(), reciever cellphone number, and the hash sign
     public String getMessageDetails() {
         return "Message ID: " + messageID + "\n" +
                "Message Hash: " + signHash + "\n" +
@@ -147,7 +147,7 @@ public class Message {
             return false;
         }
     }
-      // Getteer method to help counting the total message of message calling.
+      // Getteer method to help counting the total message of message calling
     public int getMessageCount() 
     {
         return messageCounter;
