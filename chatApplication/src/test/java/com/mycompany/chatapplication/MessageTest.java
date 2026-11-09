@@ -82,7 +82,7 @@ public class MessageTest
         assertNotNull(Message.storedMessageArray[1]);
     }
     
-    // 3. Test: Search for messageID
+    // Test if the system can search for messageID
     @Test
     public void testSearchByMessageID() 
     {
@@ -93,7 +93,7 @@ public class MessageTest
         assertNotNull(expectedID);
     }
     
-    // 4. Test: Search all the messages sent or stored regarding a particular recipient
+    //Test the search all the messages sent can be displayed correctly 
     @Test
     public void testSearchByRecipient() 
     {
@@ -106,7 +106,7 @@ public class MessageTest
         assertTrue(msg2.recipient.equals("+27838884567"));
     }
     
-    // 5. Test: Delete a message using a message hash
+    //Test if the system can delete a message using a message hash
     @Test
     public void testDeleteByMessageHash() 
     {
