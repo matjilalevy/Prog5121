@@ -213,7 +213,7 @@ public class Message {
             System.out.println("No stored messages found.");
             return;
         }
-        System.out.println("\n--- SENDER AND RECIPIENT OF STORED MESSAGES ---");
+        System.out.println("\n SENDER AND RECIPIENT OF STORED MESSAGES");
         for (int i = 0; i < storedMessageCount; i++) {
             String details = storedMessageArray[i];
             String recipientVal = "";
