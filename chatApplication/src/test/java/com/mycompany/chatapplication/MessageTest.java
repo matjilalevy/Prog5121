@@ -57,7 +57,7 @@ public class MessageTest
         assertNotNull(details);
         assertTrue(details.contains("Hi Sir"));
     }
-    // 1. Test: Sent Messages array correctly populated
+    //Test if the Sent Messages array is correctly populated
     @Test
     public void testSentMessagesArrayPopulated() 
     {
@@ -70,7 +70,7 @@ public class MessageTest
         assertTrue(result.contains("Did you get the cake?") && result.contains("It is dinner time!"));
     }
     
-    // 2. Test: Display the longest message
+    // Test if the longest message is displayed correctly 
     @Test
     public void testDisplayLongestMessage() 
     {
