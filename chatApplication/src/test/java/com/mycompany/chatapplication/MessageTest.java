@@ -2,7 +2,7 @@ package com.mycompany.chatapplication;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-
+//Junit test for the message.java methods 
 public class MessageTest 
 {
     // Tests if message ID is not more than 10 characters
