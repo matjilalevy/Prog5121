@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class Junit_Tests 
 {
 
-    // USERNAME TEST
+    //User name test
     @Test
     public void testCheckUsername_valid() 
     {
