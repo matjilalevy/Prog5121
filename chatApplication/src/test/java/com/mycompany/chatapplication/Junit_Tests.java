@@ -45,8 +45,8 @@ public class Junit_Tests
     public void testLoginUser_success() 
     {
         // Set stored static values first
-        ChatApplication.accountUser = "user_";
-        ChatApplication.accountPass = "Pass123@";
+        ChatApplication.userName = "user_";
+        ChatApplication.password = "Pass123@";
 
         assertTrue(ChatApplication.loginUser("user_", "Pass123@"));
     }
