@@ -250,11 +250,12 @@ public class Message {
                 longest = details;
             }
         }
+        //Displaying the longest message 
         System.out.println("\n LONGEST STORED MESSAGE ");
         System.out.println(longest);
     }
 
-    //Search for a message ID and display corresponding recipient and message
+    //Search for a message ID and displays it if it is found with recipient cell number and message
     public static void searchStoredMessageByID(String searchID) {
         loadStoredMessagesFromJson();
         boolean found = false;
@@ -293,9 +294,11 @@ public class Message {
             if (details.contains("Recipient: " + searchRecipient)) {
                 found = true;
                 System.out.println(details);
+                //Creating a bit of visual to suparate the layout 
                 System.out.println("-------------------------");
             }
         }
+        //If the searched id was not found, the found variable will be false, then display this message 
         if (!found) {
             System.out.println("No messages found for this recipient.");
         }
