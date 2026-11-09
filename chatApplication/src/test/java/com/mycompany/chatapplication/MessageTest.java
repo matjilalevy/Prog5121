@@ -118,7 +118,7 @@ public class MessageTest
         Message.deleteStoredMessageByHash(hash);
     }
     
-    // 6. Test: Display Report
+    //Test if the system displays the full report correctly
     @Test
     public void testDisplayReport() 
     {
