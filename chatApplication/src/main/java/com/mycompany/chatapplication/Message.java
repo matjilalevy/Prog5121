@@ -288,7 +288,7 @@ public class Message {
     public static void searchStoredMessagesByRecipient(String searchRecipient) {
         loadStoredMessagesFromJson();
         boolean found = false;
-        System.out.println("\n--- MESSAGES FOR RECIPIENT: " + searchRecipient + " ---");
+        System.out.println("\n  MESSAGES FOR RECIPIENT: " + searchRecipient );
         for (int i = 0; i < storedMessageCount; i++) {
             String details = storedMessageArray[i];
             if (details.contains("Recipient: " + searchRecipient)) {
