@@ -284,7 +284,7 @@ public class Message {
         }
     }
 
-    //Search for all messages stored for a particular recipient
+    //Search for all messages stored for a specific recipient
     public static void searchStoredMessagesByRecipient(String searchRecipient) {
         loadStoredMessagesFromJson();
         boolean found = false;
