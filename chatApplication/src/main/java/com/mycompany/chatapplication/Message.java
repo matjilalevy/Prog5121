@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Message {
     
-    // Declaring public variables
+    // Declaring public variables 
     public String messageID;
     public int messageCounter;
     public String recipient;
@@ -20,7 +20,7 @@ public class Message {
     static String[] savedMessages = new String[50];
     static int numberOfMessages = 0;
     
-    //Required Arrays for data storage
+    //Creating Arrays for data storage
     public static String[] sentMessageArray = new String[100];
     public static int sentMessageCount = 0;
 
