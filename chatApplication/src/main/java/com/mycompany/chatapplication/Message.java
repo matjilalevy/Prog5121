@@ -198,6 +198,7 @@ public class Message {
                         storedMessageCount = storedMessageCount + 1;
                     }
                 }
+                //Closing the file reader 
                 fileScanner.close();
             }
         } catch (Exception e) {
